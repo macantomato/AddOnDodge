@@ -1,0 +1,1 @@
+WOW AddOn - Block for warrior , when using overpower which gets prompted to use when a block has appeared. Thereby showcasing that a block has been performed, and signaling the user to switch stance and use overpower for damage increase. 
