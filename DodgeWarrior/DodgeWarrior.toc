@@ -1,0 +1,6 @@
+## Interface: 11505
+## Title: Warrior Dodge Alert 
+## Notes: Prints a message when a dodge event is detected inside the combat log.
+## Author: GitHub @macantomato
+
+DodgeWarrior.lua
