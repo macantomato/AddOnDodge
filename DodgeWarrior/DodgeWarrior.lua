@@ -8,8 +8,15 @@ frame:SetScript("OnEvent", function(self, event)
     -- Retrieve the current combat log event information
     local arr = { CombatLogGetCurrentEventInfo() }
     
-    -- Check if the combat log indicates a dodge event.
-    if arr[12] == "DODGE" or arr[15] == "DODGE" then
-        print("dodge has been done")
+    print(arr[12])
+    local usable = IsUsableSpell("Overpower")
+    if arr[12] == "DODGE"  then
+        local usable = IsUsableSpell("Overpower")
+    
+        if usable then
+            print("Dodge detected! Overpower is usable — go go go!")
+        else
+            print("Dodge detected! But Overpower is not usable — switch to Battle Stance?")
+        end
     end
 end)
